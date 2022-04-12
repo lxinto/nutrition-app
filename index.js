@@ -24,10 +24,24 @@ function getVal() {
     console.log(arr)
 }
 
-function clear() {
+//clear button
+function del() {
+    
+    if (arr.length > 0 ) {
+        arr.pop()
+        console.log(arr)
+    }
+    
+    var progress = arr.reduce(function(a, b){
+        return a + b;
+    }, 0);
+  
     const progressBar = document.querySelector(".progress");
-    progressBar.style.width = 0 + "%"   
-    //clear button
+    progressBar.style.width = progress + "%"    
+    
+    // const progressBar = document.querySelector(".progress");
+    // progressBar.style.width = 0 + "%"   
+
 }
 
 
