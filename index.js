@@ -1,6 +1,7 @@
 let arr = []
 let progress = 0 
 
+//enter
 function getVal() {
     const val = document.querySelector('input').value;
     const progressBar = document.querySelector(".progress");
@@ -18,15 +19,10 @@ function getVal() {
     }
 
     progressBar.style.width = progress + "%"    
-    
-    console.log(val);
-    console.log(progress + "%")   
-    console.log(arr)
 }
 
 //clear button
-function del() {
-    
+function del() {   
     if (arr.length > 0 ) {
         arr.pop()
         console.log(arr)
@@ -38,10 +34,6 @@ function del() {
   
     const progressBar = document.querySelector(".progress");
     progressBar.style.width = progress + "%"    
-    
-    // const progressBar = document.querySelector(".progress");
-    // progressBar.style.width = 0 + "%"   
-
 }
 
 

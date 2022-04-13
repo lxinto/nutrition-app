@@ -9,22 +9,44 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Nutrition App</h1>
-        <h2>Fiber Daily Value</h2>
-        
-        <div class="progress-container">
-            <div class="progress"></div>
+    <h1>Nutrition App</h1>
+    <div class="boxes">
+
+        <div class="container">        
+            <h2 style="color:rgb(207, 163, 163)">Fiber Daily Value</h2>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+            <input name="bar" placeholder="Fibers Taken in Grams" onblur="" >   
+            <div class="button-container">
+                <button onclick="getVal()">Enter</button>
+                <button onclick="del()">Clear</button>
+            </div>            
         </div>
         
-        <input name="bar" placeholder="Fibers Taken in Grams" onblur="" >
-        <!-- <label for="bar">0</label> -->
-        
-        <div class="button-container">
-            <button onclick="getVal()">Enter</button>
-            <button onclick="del()">Clear</button>
+        <div class="container">        
+            <h2 style="color:#add8e6;">Protein Daily Value</h2>
+            <div class="progress-container">
+                <div class="progress"  style="background:#2ab0dd;"></div>
+            </div>
+            <input name="bar" placeholder="Protein Taken in Grams" onblur="" >   
+            <div class="button-container">
+                <button onclick="getVal()">Enter</button>
+                <button onclick="del()">Clear</button>
+            </div>            
         </div>
-    
+        
+        <div class="container">        
+            <h2 style="color:rgb(122, 189, 122);">Carbs Daily Value</h2>
+            <div class="progress-container">
+                <div class="progress" style="background:rgb(67, 190, 67) ;"></div>
+            </div>
+            <input name="bar" placeholder="Carbs Taken in Grams" onblur="" >   
+            <div class="button-container">
+                <button onclick="getVal()">Enter</button>
+                <button onclick="del()">Clear</button>
+            </div>            
+        </div>
     </div>
 
 
